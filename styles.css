@@ -1,0 +1,137 @@
+/* DEFAULT STYLES
+
+BG: background-color: hsl(45, 60%, 80%);
+FONT: font-family: Arial, sans-serif;
+MAIN COLOR: color: hsl(0, 90%, 20%);
+
+*/
+
+
+body{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(45, 81%, 90%);
+}
+
+#watermark{
+    font-family: Arial, sans-serif;
+    position: fixed;
+    bottom: 75px;
+    left: 100px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: hsl(0, 90%, 20%);
+    background-color: hsl(45, 60%, 80%);
+    border-radius: 15px;
+    width: 250px;
+    padding: 20px;
+}
+
+@media (max-width: 1000px){
+    #watermark{
+        display: none;
+    }
+}
+
+#description{
+    text-align: justify;
+    max-width: 300px;
+    line-height: 1.6rem;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    top: 75px;
+    right: 100px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: hsl(0, 90%, 20%);
+    background-color: hsl(45, 60%, 80%);
+    border-radius: 15px;
+    width: 300px;
+    padding: 20px;
+}
+
+@media (max-width: 1000px){
+    #description{
+        display: none;
+    }
+}
+
+#date{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    bottom: 200px;
+    right: 100px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: hsl(0, 90%, 20%);
+    background-color: hsl(45, 60%, 80%);
+    border-radius: 15px;
+    width: 300px;
+    padding: 20px;
+}
+
+@media (max-width: 1000px){
+    #watermark{
+        display: none;
+    }
+}
+
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: hsl(45, 60%, 80%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 90%, 20%);
+    color: white;
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 90%, 20%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(0, 90%, 30%);
+}
+
+button:active{
+    background-color: hsl(0, 90%, 40%);
+}
+
+.operator-btn{
+    background-color: hsl(0, 90%, 15%);
+}
+
+.operator-btn:hover{
+    background-color: hsl(0, 90%, 30%);
+}
+
+.operator-btn:active{
+    background-color: hsl(0, 90%, 40%);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insane Calculator!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id = "calculator">
+        <input id = "display" readonly>
+        <div id = "keys">
+            <button onclick="clearDisplay()"class="operator-btn">AC</button>
+            <button onclick="deleteDisplay('Del')"class="operator-btn">Del</button>
+            <button onclick="appendToDisplay('%')"class="operator-btn">%</button>
+            <button onclick="appendToDisplay('+')"class="operator-btn">+</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('-')"class="operator-btn">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('*')"class="operator-btn">*</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('/')"class="operator-btn">/</button>
+            <div class = "empty"></div>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')"class="operator-btn">.</button>
+            <button onclick="calculate()"class="operator-btn">=</button>
+        </div>
+    </div>
+
+    <div id = "watermark">
+        <h2>Insane Calculator</h2>
+        <p>Made by: Alcantara</p>
+        <p>Made in: HTML, JS, CSS</p>
+    </div>
+    
+    <div id = "description">
+        <p>A Calculator System made by Alcantara
+            for the purpose of learning and
+            improving skills in HTML, JS, and CSS.
+            This calculator is designed to perform basic
+            arithmetic operations such as addition,
+            subtraction, multiplication, and division.
+            It also includes features like percentage
+            calculation, clear display, and delete
+            functionality for user convenience.
+        </p>
+    </div>
+
+    <div id = "date">
+        <h2>08/18/26</h2>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
