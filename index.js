@@ -15,6 +15,11 @@ function deleteDisplay(input){
 }
 
 function calculate(){
+    if (display.value === "04/27/23"){
+        display.value = "iloveyousosomuchhh!";
+        return;
+    }
+
     try{
         display.value = eval(display.value);
     }
